@@ -63,6 +63,7 @@ For interpretable and fast results we also include a simple goal-conditioned gri
 ```commandline
 git clone https://github.com/MichaelTMatthews/purejaxgcrl.git
 cd purejaxgcrl
+pre-commit install
 pip install -r requirements.txt
 ```
 
