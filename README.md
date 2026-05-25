@@ -3,8 +3,7 @@
 </p>
 
 <p align="center">
-        <a href= "https://pypi.org/project/craftax/">
-        <img src="https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12-blue" /></a>
+        <img src="https://img.shields.io/badge/python-3.10%20%7C%203.11%20%7C%203.12-blue" />
        <a href= "https://github.com/MichaelTMatthews/purejaxgcrl/blob/main/LICENSE">
         <img src="https://img.shields.io/badge/License-MIT-yellow" /></a>
        <a href= "https://www.mtmatthews.com/blog/leo/">
@@ -46,13 +45,13 @@ We provide clean single-file implementations for all methods evaluated in the LE
  <img width="80%" src="images/craftax_results.png" />
 </p>
 
-The complete goal set listing is available for [Craftax-Classix](envs/craftax/goal_listing_craftax_classic.txt) and [Craftax](envs/craftax/goal_listing_craftax.txt), with more details in the manuscript appendices. 
+The complete goal set listing is available for [Craftax-Classic](envs/craftax/goal_listing_craftax_classic.txt) and [Craftax](envs/craftax/goal_listing_craftax.txt), with more details in the manuscript appendices. 
 
 # ⬜ Gridworld
 
 For interpretable and fast results we also include a simple goal-conditioned gridworld environment, for which an expert agent can be trained in under a minute.
 
-<p align="middle">
+<p align="center">
   <img src="images/gridworld_1.gif" width="240" />
   <img src="images/gridworld_2.gif" width="240" />
   <img src="images/gridworld_3.gif" width="240" />
@@ -63,8 +62,8 @@ For interpretable and fast results we also include a simple goal-conditioned gri
 ```commandline
 git clone https://github.com/MichaelTMatthews/purejaxgcrl.git
 cd purejaxgcrl
-pre-commit install
 pip install -r requirements.txt
+pre-commit install
 ```
 
 We have developed and tested on `jax==0.6.0`.
