@@ -1,0 +1,27 @@
+program: dual_leo_pqn.py
+method: grid
+command:
+  - ${env}
+  - python3
+  - ${program}
+  - ${args_no_boolean_flags}
+parameters:
+  env_name:
+    values: ["Craftax-Classic-Symbolic-v1", "Craftax-Symbolic-v1"]
+  total_timesteps:
+    value: 1e9
+  dual_leo_acting_mode:
+    values: ["lc"]
+  anneal_lc_leo:
+    value: false
+  lc_leo_weight:
+    value: 0.3
+
+  seed:
+    values: [0, 1]
+
+
+  save_policy:
+    value: true
+  test_during_training:
+    value: false

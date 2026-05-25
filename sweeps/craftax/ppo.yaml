@@ -1,0 +1,16 @@
+program: ppo.py
+method: grid
+command:
+  - ${env}
+  - python3
+  - ${program}
+  - ${args_no_boolean_flags}
+parameters:
+  env_name:
+    values: ["Craftax-Symbolic-v1", "Craftax-Classic-Symbolic-v1"]
+  total_timesteps:
+    value: 1e9
+  seed:
+    values: [0, 1]
+  save_policy:
+    value: true

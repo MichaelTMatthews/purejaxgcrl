@@ -1,0 +1,9 @@
+.idea/
+wandb_key
+.run/
+**/__pycache__
+wandb/
+tea_debug.log
+.venv/
+analysis/craftax/recordings
+analysis/gridworld/recordings

@@ -1,0 +1,20 @@
+program: leo.py
+method: grid
+command:
+  - ${env}
+  - python3
+  - ${program}
+  - ${args_no_boolean_flags}
+parameters:
+  env_name:
+    values: ["Gridworld-v1"]
+  total_timesteps:
+    value: 1e8
+  seed:
+    values: [0, 1]
+  save_policy:
+    value: true
+  gridworld_wall_threshold:
+    value: 0.2
+  gridworld_map_size:
+    values: [12, 16, 24]

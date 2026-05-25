@@ -1,0 +1,26 @@
+program: dual_leo_ppo.py
+method: grid
+command:
+  - ${env}
+  - python3
+  - ${program}
+  - ${args_no_boolean_flags}
+parameters:
+  env_name:
+    values: ["Craftax-Symbolic-v1", "Craftax-Classic-Symbolic-v1"]
+  total_timesteps:
+    value: 1e9
+  seed:
+    values: [0, 1]
+
+  bc_coef_policy:
+    value: 0.1
+  bc_coef_value:
+    value: 0.0
+  bc_policy_target:
+    value: "argmax"
+  anneal_bc:
+    value: true
+
+  save_policy:
+    value: true

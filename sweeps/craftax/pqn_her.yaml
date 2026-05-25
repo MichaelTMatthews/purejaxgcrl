@@ -1,0 +1,29 @@
+program: pqn.py
+method: grid
+command:
+  - ${env}
+  - python3
+  - ${program}
+  - ${args_no_boolean_flags}
+parameters:
+  env_name:
+    values: ["Craftax-Symbolic-v1", "Craftax-Classic-Symbolic-v1"]
+  total_timesteps:
+    value: 1e9
+  seed:
+    values: [0, 1]
+
+  her_mode:
+    values: ["mixed"]
+  her_mixed_goal_random_proportion:
+    values: [0.75]
+
+  minibatch_size:
+    values: [2048]
+  lr:
+    values: [0.0001]
+
+  save_policy:
+    value: true
+  test_during_training:
+    value: false
